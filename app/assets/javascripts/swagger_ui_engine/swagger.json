@@ -2,7 +2,7 @@
     "swagger": "2.0",
     "info": {
         "version": "0.0.0",
-        "title": "Override me in app/assets/javascripts/swagger_engine/swagger.json"
+        "title": "Override me in app/assets/javascripts/swagger_ui_engine/swagger.json"
     },
     "paths": {
         "/": {
