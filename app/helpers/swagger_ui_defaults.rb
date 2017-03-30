@@ -18,8 +18,4 @@ module SwaggerUiDefaults
   def default_request_headers
     false
   end
-
-  def default_show_operation_ids
-    false
-  end
 end

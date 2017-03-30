@@ -9,7 +9,6 @@ module SwaggerUiEngine
       @json_editor = set_json_editor
       @model_rendering = set_model_rendering
       @request_headers = set_request_headers
-      @show_operation_ids = set_show_operation_ids
     end
   end
 end
