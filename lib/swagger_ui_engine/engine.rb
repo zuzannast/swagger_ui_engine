@@ -17,7 +17,8 @@ module SwaggerUiEngine
   end
 
   class Configuration
-    attr_accessor :swagger_url
+    attr_accessor :swagger_url, :doc_expansion, :model_rendering,
+                  :json_editor, :request_headers
   end
   class << self
     attr_writer :configuration

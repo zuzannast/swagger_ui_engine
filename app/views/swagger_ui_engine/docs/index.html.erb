@@ -8,7 +8,6 @@
   <%= stylesheet_link_tag "swagger_ui_engine/application" %>
   <%= stylesheet_link_tag "swagger_ui_engine/reset", media: "print" %>
   <%= stylesheet_link_tag "swagger_ui_engine/screen", media: "print" %>
-  <%= stylesheet_link_tag "swagger_ui_engine/print", media: "print" %>
   <%= javascript_include_tag "swagger_ui_engine/application" %>
   <%= csrf_meta_tags %>
 
@@ -52,10 +51,10 @@
         onFailure: function(data) {
           log("Unable to Load SwaggerUI");
         },
-        docExpansion: "none",
-        jsonEditor: false,
-        defaultModelRendering: 'schema',
-        showRequestHeaders: false,
+        docExpansion: "<%= @doc_expansion %>",
+        jsonEditor: "<%= @json_editor %>",
+        defaultModelRendering: "<%= @model_rendering %>",
+        showRequestHeaders: "<%= @request_headers %>",
         showOperationIds: false
       });
 

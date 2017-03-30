@@ -10,8 +10,8 @@ Gem::Specification.new do |s|
   s.authors     = ['ZuzannaSt']
   s.email       = ['zuzannast@gmail.com']
   s.homepage    = 'https://github.com/ZuzannaSt/swagger_ui_engine'
-  s.summary     = 'Mount swagger-ui as rails engine.'
-  s.description = 'Api docs inside your rails project.'
+  s.summary     = 'Mount Swagger-Ui as Rails engine.'
+  s.description = 'Swagger API docs and web console for your rails project.'
   s.license     = 'MIT'
 
   s.files = Dir['{app,config,db,lib}/**/*', 'MIT-LICENSE', 'Rakefile', 'README.rdoc']
