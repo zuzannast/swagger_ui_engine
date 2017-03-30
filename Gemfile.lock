@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    swagger_ui_engine (0.0.1)
+    swagger_ui_engine (0.0.3)
 
 GEM
   remote: https://rubygems.org/
@@ -11,7 +11,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  swagger_engine!
+  swagger_ui_engine!
 
 BUNDLED WITH
    1.12.5
