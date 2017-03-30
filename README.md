@@ -40,7 +40,7 @@ end
 
 It will look for you main doc file under `/public/api_docs` path.
 
-## Config options
+### Config options
 Config Name | Swagger parameter name | Description
 --- | --- | ---
 config.swagger_url | url | The url pointing to `swagger.json` (Swagger 2.0) or the resource listing (earlier versions) as per [OpenAPI Spec](https://github.com/OAI/OpenAPI-Specification/).
