@@ -51,11 +51,11 @@
         onFailure: function(data) {
           log("Unable to Load SwaggerUI");
         },
-        docExpansion: "none",
-        jsonEditor: false,
-        defaultModelRendering: 'schema',
-        showRequestHeaders: false,
-        showOperationIds: false
+        docExpansion: "<%= @doc_expansion %>",
+        jsonEditor: "<%= @json_editor %>",
+        defaultModelRendering: "<%= @model_rendering %>",
+        showRequestHeaders: "<%= @request_headers %>",
+        showOperationIds: "<%= @show_operation_ids %>"
       });
 
       window.swaggerUi.load();
