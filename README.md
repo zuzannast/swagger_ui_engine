@@ -1,6 +1,8 @@
-# SwaggerUiEngine
+# SwaggerUiEngine 
 
 Include [swagger-ui](https://github.com/swagger-api/swagger-ui) as Rails engine and document your API with simple YAML files.
+
+[![Build Status](https://travis-ci.org/ZuzannaSt/swagger_ui_engine.svg?branch=master)](https://travis-ci.org/ZuzannaSt/swagger_ui_engine)
 
 ## Versions
 
