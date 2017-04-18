@@ -1,3 +1,4 @@
 .bundle/
 log/*.log
+test/dummy/tmp/
 swagger_ui_engine-*.gem
