@@ -1,12 +1,16 @@
 # SwaggerUiEngine
 
-Include [swagger-ui](https://github.com/swagger-api/swagger-ui) as rails engine and document your API with simple JSON or YAML files.
+Include [swagger-ui](https://github.com/swagger-api/swagger-ui) as Rails engine and document your API with simple YAML files.
+
+## Problem
+
+Working on a Rails API, I've wanted to document my endpoints in the clearest and easiest way possible. My goal was to have the documentation separated from the actual code base and to have a web UI version of Swagger for testing and reading it. Using Rails 5 default API, I didn't need to include Grape, so I took a look into some other existing solutions. Most of them were no longer supported (e.g. [swagger_engine](https://github.com/batdevis/swagger_engine) and [swagger-ui_rails](https://github.com/d4be4st/swagger-ui_rails)) or required adding some extra code for the actual documentation (e.g. [swagger-docs](https://github.com/richhollis/swagger-docs)). Also, none of them supported Swagger web UI configuration, so I decided to write and maintain a gem on my own that would allow others to include Swagger web UI as Rails engine and support writing simple documentation in YAML files.
 
 ## Swagger UI Version
 
 Swagger UI Version |
 ------------------ |
-2.2.8              |
+2.2.10             |
 
 ## Swagger specifications
 
@@ -38,7 +42,7 @@ SwaggerUiEngine.configure do |config|
 end
 ```
 
-It will look for you main doc file under `/public/api_docs` path.
+and place your main documentation file under `/public/api_docs` path.
 
 ### Config options
 Config Name | Swagger parameter name | Description
@@ -51,7 +55,7 @@ config.json_editor | jsonEditor | Enables a graphical view for editing complex b
 
 ### Edit your json/yaml files
 
-Use [Swagger editor](https://github.com/swagger-api/swagger-editor).
+You can use [Swagger editor](https://github.com/swagger-api/swagger-editor) to write and validate your Swagger docs.
 
 ## License
 
