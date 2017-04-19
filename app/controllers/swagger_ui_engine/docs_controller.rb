@@ -3,7 +3,14 @@ module SwaggerUiEngine
     include ConfigParser
     include SwaggerUiDefaults
 
+    before_action :set_configs
+
     def index
+    end
+
+    private
+
+    def set_configs
       @swagger_url = set_swagger_url
       @doc_expansion = set_doc_expansion
       @json_editor = set_json_editor
