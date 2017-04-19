@@ -18,21 +18,4 @@ module SwaggerUiEngine
       Rails.application.config.assets.precompile << /\.(?:svg|eot|woff|ttf)$/
     end
   end
-
-  class Configuration
-    attr_accessor :swagger_url, :doc_expansion, :model_rendering,
-                  :json_editor, :request_headers
-  end
-  class << self
-    attr_writer :configuration
-  end
-
-  module_function
-  def configuration
-    @configuration ||= Configuration.new
-  end
-
-  def configure
-    yield(configuration)
-  end
 end
