@@ -1,6 +1,6 @@
 # SwaggerUiEngine
 
-Include [swagger-ui](https://github.com/swagger-api/swagger-ui) as Rails engine and document your API with simple YAML files.
+Include [swagger-ui](https://github.com/swagger-api/swagger-ui) as Rails engine and document your API with simple YAML files. Supports API documentation versioning.
 
 [![Gem Version](https://badge.fury.io/rb/swagger_ui_engine.svg)](https://badge.fury.io/rb/swagger_ui_engine) [![Build Status](https://travis-ci.org/ZuzannaSt/swagger_ui_engine.svg?branch=master)](https://travis-ci.org/ZuzannaSt/swagger_ui_engine) [![Code Climate](https://codeclimate.com/github/ZuzannaSt/swagger_ui_engine/badges/gpa.svg)](https://codeclimate.com/github/ZuzannaSt/swagger_ui_engine) [![Dependency Status](https://gemnasium.com/badges/github.com/ZuzannaSt/swagger_ui_engine.svg)](https://gemnasium.com/github.com/ZuzannaSt/swagger_ui_engine)
 
@@ -43,22 +43,25 @@ You can place this route under `admin_constraint` or other restricted path.
 
 ### Initialize
 
-Set the path of your json/yaml files in a initializer:
+Set the path of your json/yaml versioned documentations in a initializer:
 
 ```
 #config/initializers/swagger_ui_engine.rb
 
 SwaggerUiEngine.configure do |config|
-  config.swagger_url = 'api_docs/swagger.yaml'
+  config.swagger_url = {
+    v1: 'api/v1/swagger.yaml',
+    v2: 'api/v2/swagger.yaml',
+  }
 end
 ```
 
-and place your main documentation file under `/public/api_docs` path.
+and place your main documentation file under `/public/api` path.
 
 ### Configure
 Config Name | Swagger parameter name | Description
 --- | --- | ---
-config.swagger_url | url | The url pointing to `swagger.yaml` (Swagger 2.0) as per [OpenAPI Spec](https://github.com/OAI/OpenAPI-Specification/).
+config.swagger_url | url | The url pointing `swagger.yaml` (Swagger 2.0) as per [OpenAPI Spec](https://github.com/OAI/OpenAPI-Specification/). This params requires hash value - pass your API doc version name as a key and it's main documentation url as a value.
 config.doc_expansion | docExpansion | Controls how the API listing is displayed. It can be set to 'none' (default), 'list' (shows operations for each resource), or 'full' (fully expanded: shows operations and their details).
 config.model_rendering | defaultModelRendering | Controls how models are shown when the API is first rendered. It can be set to 'model' or 'schema', and the default is 'schema'.
 config.request_headers | showRequestHeaders | Whether or not to show the headers that were sent when making a request via the 'Try it out!' option. Defaults to `false`.
