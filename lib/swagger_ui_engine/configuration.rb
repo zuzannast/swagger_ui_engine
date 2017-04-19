@@ -7,6 +7,7 @@ module SwaggerUiEngine
       :model_rendering,
       :json_editor,
       :request_headers,
+      :validator_enabled,
     ].freeze
 
     attr_accessor(*OPTIONS)

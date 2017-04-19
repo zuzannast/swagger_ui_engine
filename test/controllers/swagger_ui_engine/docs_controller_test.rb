@@ -25,6 +25,7 @@ module SwaggerUiEngine
       get '/swagger'
       assert_match('showRequestHeaders: "false"', @response.body)
       assert_match('jsonEditor: "false"', @response.body)
+      assert_match('validatorUrl: "null"', @response.body)
     end
   end
 end

@@ -23,6 +23,14 @@ module ConfigParser
     configuration.show_operation_ids || default_show_operation_ids
   end
 
+  def set_validator_url
+    validator_enabled ? default_validator_url : 'null'
+  end
+
+  def validator_enabled
+    configuration.validator_enabled || false
+  end
+
   def configuration
     SwaggerUiEngine.configuration
   end

@@ -9,6 +9,7 @@ module SwaggerUiEngine
       @json_editor = set_json_editor
       @model_rendering = set_model_rendering
       @request_headers = set_request_headers
+      @validator_url = set_validator_url
     end
   end
 end

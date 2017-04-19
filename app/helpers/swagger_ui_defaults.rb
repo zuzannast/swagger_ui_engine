@@ -18,4 +18,8 @@ module SwaggerUiDefaults
   def default_request_headers
     false
   end
+
+  def default_validator_url
+    '//online.swagger.io/validator'
+  end
 end

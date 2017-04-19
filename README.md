@@ -1,4 +1,4 @@
-# SwaggerUiEngine 
+# SwaggerUiEngine
 
 Include [swagger-ui](https://github.com/swagger-api/swagger-ui) as Rails engine and document your API with simple YAML files.
 
@@ -63,6 +63,7 @@ config.doc_expansion | docExpansion | Controls how the API listing is displayed.
 config.model_rendering | defaultModelRendering | Controls how models are shown when the API is first rendered. It can be set to 'model' or 'schema', and the default is 'schema'.
 config.request_headers | showRequestHeaders | Whether or not to show the headers that were sent when making a request via the 'Try it out!' option. Defaults to `false`.
 config.json_editor | jsonEditor | Enables a graphical view for editing complex bodies.  Defaults to `false`.
+config.validator_enabled | validatorUrl | Enables documentation validator.  Defaults to `false` (`validatorUrl: 'null'`).
 
 ### Edit your json/yaml files
 
