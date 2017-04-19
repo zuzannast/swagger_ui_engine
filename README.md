@@ -8,8 +8,8 @@ Include [swagger-ui](https://github.com/swagger-api/swagger-ui) as Rails engine 
 ## Versions
 
 Swagger UI version | Rails version
------------------- | -------------
-2.2.10             | >= 4.2.6
+------------------ | ----------------
+2.2.10             | 5.0.2 (>= 4.2.6)
 
 ## Problem
 
@@ -67,6 +67,10 @@ config.json_editor | jsonEditor | Enables a graphical view for editing complex b
 ### Edit your json/yaml files
 
 You can use [Swagger editor](https://github.com/swagger-api/swagger-editor) to write and validate your Swagger docs.
+
+## Example app
+
+Here's an example use of [SwaggerUiEngine in Rails application](https://github.com/ZuzannaSt/swagger_ui_engine_example).
 
 ## License
 
