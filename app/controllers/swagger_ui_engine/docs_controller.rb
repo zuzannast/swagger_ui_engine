@@ -1,5 +1,5 @@
 module SwaggerUiEngine
-  class DocsController < ActionController::Base
+  class DocsController < ApplicationController
     include ConfigParser
     include SwaggerUiDefaults
 
