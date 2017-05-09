@@ -55,6 +55,8 @@ end
 
 ### Initialize
 
+#### Versioned API documentations
+
 Set the path of your json/yaml versioned documentations in an initializer:
 
 ```
@@ -69,6 +71,20 @@ end
 ```
 
 and place your main documentation file under `/public/api` path.
+
+#### Single API documentation
+
+You can define your main documentation url in a hash value (same way as in the versioned documentations) or pass single string with the url:
+
+```
+# config/initializers/swagger_ui_engine.rb
+
+SwaggerUiEngine.configure do |config|
+  config.swagger_url = 'api/v1/swagger.yaml'
+end
+```
+
+This is a compatibility patch for the `SwaggerUiEngine` gem versions `<= 0.0.5`
 
 ### Configure
 Config Name | Swagger parameter name | Description
