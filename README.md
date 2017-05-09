@@ -2,8 +2,7 @@
 
 Include [swagger-ui](https://github.com/swagger-api/swagger-ui) as Rails engine and document your API with simple YAML files. Supports API documentation versioning.
 
-[![Gem Version](https://badge.fury.io/rb/swagger_ui_engine.svg)](https://badge.fury.io/rb/swagger_ui_engine) [![Build Status](https://travis-ci.org/ZuzannaSt/swagger_ui_engine.svg?branch=master)](https://travis-ci.org/ZuzannaSt/swagger_ui_engine) [![Code Climate](https://codeclimate.com/github/ZuzannaSt/swagger_ui_engine/badges/gpa.svg)](https://codeclimate.com/github/ZuzannaSt/swagger_ui_engine) [![Dependency Status](https://gemnasium.com/badges/github.com/ZuzannaSt/swagger_ui_engine.svg)](https://gemnasium.com/github.com/ZuzannaSt/swagger_ui_engine)
-
+[![Gem Version](https://badge.fury.io/rb/swagger_ui_engine.svg)](https://badge.fury.io/rb/swagger_ui_engine) [![Build Status](https://travis-ci.org/ZuzannaSt/swagger_ui_engine.svg?branch=master)](https://travis-ci.org/ZuzannaSt/swagger_ui_engine) [![Code Climate](https://codeclimate.com/github/ZuzannaSt/swagger_ui_engine/badges/gpa.svg)](https://codeclimate.com/github/ZuzannaSt/swagger_ui_engine)
 
 ## Versions
 
