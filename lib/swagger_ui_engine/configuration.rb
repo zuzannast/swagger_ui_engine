@@ -4,11 +4,11 @@ module SwaggerUiEngine
     OPTIONS = [
       :admin_username,
       :admin_password,
-      :swagger_url,
       :doc_expansion,
-      :model_rendering,
       :json_editor,
+      :model_rendering,
       :request_headers,
+      :swagger_url,
       :validator_enabled,
     ].freeze
 
