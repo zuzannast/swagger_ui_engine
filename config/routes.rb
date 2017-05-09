@@ -1,3 +1,6 @@
 SwaggerUiEngine::Engine.routes.draw do
-  root to: 'docs#index'
+  scope format: false do
+    resources :docs, only: [:index, :show]
+    root to: 'docs#index'
+  end
 end
