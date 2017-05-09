@@ -22,5 +22,5 @@ Gem::Specification.new do |s|
     'CHANGELOG.md'
   ]
 
-  s.add_runtime_dependency 'rails', '~> 4.2', '>= 4.2.6'
+  s.add_runtime_dependency 'rails', '~> 4.2', '>= 4.2.7.1'
 end
