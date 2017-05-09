@@ -33,20 +33,33 @@ $ bundle
 
 ### Mount
 
-Add to your config/routes.rb
+Add to your `config/routes.rb`
 
 ```
 mount SwaggerUiEngine::Engine, at: "/api_docs"
 ```
 
-You can place this route under `admin_constraint` or other restricted path.
+You can place this route under `admin_constraint` or other restricted path, or configure basic HTTP authentication.
+
+#### Basic HTTP auth
+
+Set admin username and password in an initializer:
+
+```
+# config/initializers/swagger_ui_engine.rb
+
+SwaggerUiEngine.configure do |config|
+  config.admin_username = ENV['ADMIN_USERNAME']
+  config.admin_password = ENV['ADMIN_PASSWORD']
+end
+```
 
 ### Initialize
 
-Set the path of your json/yaml versioned documentations in a initializer:
+Set the path of your json/yaml versioned documentations in an initializer:
 
 ```
-#config/initializers/swagger_ui_engine.rb
+# config/initializers/swagger_ui_engine.rb
 
 SwaggerUiEngine.configure do |config|
   config.swagger_url = {
