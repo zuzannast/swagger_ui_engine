@@ -40,6 +40,14 @@ mount SwaggerUiEngine::Engine, at: "/api_docs"
 
 You can place this route under `admin_constraint` or other restricted path, or configure basic HTTP authentication.
 
+#### Devise auth
+
+```
+authenticate :user, lambda { |u| u.admin? } do
+  mount SwaggerUiEngine::Engine, at: "/api_docs"
+end
+```
+
 #### Basic HTTP auth
 
 Set admin username and password in an initializer:
