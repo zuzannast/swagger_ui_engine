@@ -13,6 +13,11 @@ module SwaggerUiEngine
       assert_response :redirect
     end
 
+    test 'index action should not display back link when single doc version' do
+      get '/swagger'
+      refute_match('Back to API versions', @response.body)
+    end
+
     test 'custom config options should work successfully' do
       get '/swagger/docs/v1'
       assert_match('url = "api_docs/v1/swagger.yaml"', @response.body)

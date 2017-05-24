@@ -86,5 +86,10 @@
 
     <div id="message-bar" class="swagger-ui-wrap" data-sw-translate>&nbsp;</div>
     <div id="swagger-ui-container" class="swagger-ui-wrap"></div>
+    <% unless @single_doc_url %>
+      <div class="swagger-ui-wrap">
+        <h3><%= link_to 'Back to API versions', docs_path %></h3>
+      </div>
+    <% end %>
   </body>
 </html>
