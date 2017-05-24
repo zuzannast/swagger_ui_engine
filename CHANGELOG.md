@@ -2,6 +2,16 @@
 
 ## master
 
+## 1.0.0
+
+* Rails 5 dependency. It is compatible with previous versions.
+* Support API versioning/multiple APIs definitions
+* Add basic HTTP auth support
+* Add `validator_enabled` configurable option
+* Refactor Configuration class definition
+* Refactor controllers
+* Redefine gem summary and description
+
 ## 0.0.5
 
 * Support Swagger UI version 2.2.10
