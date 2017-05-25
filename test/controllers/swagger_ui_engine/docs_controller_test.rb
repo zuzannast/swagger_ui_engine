@@ -31,6 +31,7 @@ module SwaggerUiEngine
       assert_match('docExpansion: "list"', @response.body)
       assert_match('defaultModelRendering: "model"', @response.body)
       assert_match('appName: "Oauth2 Test App Name"', @response.body)
+      assert_match('realm: "Oauth2 Test Realm"', @response.body)
     end
 
     test 'default config options should work successfully' do
@@ -40,6 +41,9 @@ module SwaggerUiEngine
       assert_match('jsonEditor: "false"', @response.body)
       assert_match('validatorUrl: "null"', @response.body)
       assert_match('clientId: "your-client-id"', @response.body)
+      assert_match('clientSecret: "your-client-secret-if-required"', @response.body)
+      assert_match('scopeSeparator: " "', @response.body)
+      assert_match('additionalQueryStringParams: "{}"', @response.body)
     end
   end
 end

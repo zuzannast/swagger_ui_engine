@@ -3,4 +3,5 @@ SwaggerUiEngine.configure do |config|
   config.doc_expansion = 'list'
   config.model_rendering = 'model'
   config.oauth_app_name = 'Oauth2 Test App Name'
+  config.oauth_realm = 'Oauth2 Test Realm'
 end
