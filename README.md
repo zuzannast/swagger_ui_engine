@@ -108,7 +108,7 @@ config.validator_enabled | validatorUrl | Enables documentation validator.  Defa
 You can configure OAuth2 default authorization.
 
 Config Name | Swagger parameter name | Description
---- | ---
+--- | --- | ---
 config.oauth_client_id | client_id | Default clientId. MUST be a string
 config.oauth_client_secret | client_secret | Default clientSecret. MUST be a string
 config.oauth_client_realm | realm | realm query parameter (for oauth1) added to `authorizationUrl` and `tokenUrl` . MUST be a string
