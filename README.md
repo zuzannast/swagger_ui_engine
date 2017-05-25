@@ -104,6 +104,18 @@ config.request_headers | showRequestHeaders | Whether or not to show the headers
 config.json_editor | jsonEditor | Enables a graphical view for editing complex bodies.  Defaults to `false`.
 config.validator_enabled | validatorUrl | Enables documentation validator.  Defaults to `false` (`validatorUrl: 'null'`).
 
+#### OAuth2 configuration
+You can configure OAuth2 default authorization.
+
+Config Name | Swagger parameter name | Description
+--- | ---
+config.oauth_client_id | client_id | Default clientId. MUST be a string
+config.oauth_client_secret | client_secret | Default clientSecret. MUST be a string
+config.oauth_client_realm | realm | realm query parameter (for oauth1) added to `authorizationUrl` and `tokenUrl` . MUST be a string
+config.oauth_client_app_name | appName | application name, displayed in authorization popup. MUST be a string
+config.oauth_scope_separator | scopeSeparator | scope separator for passing scopes, encoded before calling, default value is a space (encoded value `%20`). MUST be a string
+config.oauth_query_string_params | additionalQueryStringParams | Additional query parameters added to `authorizationUrl` and `tokenUrl`. MUST be an object
+
 ### Edit your json/yaml files
 
 You can use [Swagger editor](https://github.com/swagger-api/swagger-editor) to write and validate your Swagger docs.

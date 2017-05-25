@@ -7,12 +7,12 @@ module SwaggerUiDefaults
     'none'
   end
 
-  def default_model_rendering
-    'schema'
-  end
-
   def default_json_editor
     false
+  end
+
+  def default_model_rendering
+    'schema'
   end
 
   def default_request_headers
