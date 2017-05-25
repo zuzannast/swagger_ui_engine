@@ -5,6 +5,9 @@ module SwaggerUiEngine
 
     before_action :set_configs
 
+    def oauth2
+    end
+
     def index
       # backward compatibility for defining single doc url in strings
       redirect_to doc_path('v1') if single_doc_url?
