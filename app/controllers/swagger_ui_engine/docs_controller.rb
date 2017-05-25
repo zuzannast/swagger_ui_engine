@@ -1,8 +1,8 @@
 module SwaggerUiEngine
   class DocsController < ApplicationController
-    include ConfigParser
-    include OauthConfigParser
-    include SwaggerUiDefaults
+    include SwaggerUiEngine::ConfigParser
+    include SwaggerUiEngine::OauthConfigParser
+    include SwaggerUiEngine::SwaggerUiDefaults
 
     before_action :set_configs, :set_oauth_configs
 
