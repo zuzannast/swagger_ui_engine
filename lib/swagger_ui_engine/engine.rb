@@ -13,6 +13,7 @@ module SwaggerUiEngine
         swagger_ui_engine/logo_small.png
         swagger_ui_engine/favicon-32x32.png
         swagger_ui_engine/favicon-16x16.png
+        swagger_ui_engine/lang/*.js
       )
 
       Rails.application.config.assets.paths << Rails.root.join('vendor', 'assets', 'fonts')
