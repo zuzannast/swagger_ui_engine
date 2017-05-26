@@ -54,4 +54,5 @@ window.SwaggerTranslator.learn({
     "from path":"from path",
     "server returned":"server returned",
     "Authorize":"Authorize",
+    "Back to the list":"Back to the list",
 });

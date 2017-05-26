@@ -52,5 +52,7 @@ window.SwaggerTranslator.learn({
     "Finished Loading Resource Information. Rendering Swagger UI":"已加载资源信息。正在渲染Swagger UI",
     "Unable to read api":"无法读取api",
     "from path":"从路径",
-    "server returned":"服务器返回"
+    "server returned":"服务器返回",
+    "Authorize":"Authorize",
+    "Back to the list":"Back to the list",
 });

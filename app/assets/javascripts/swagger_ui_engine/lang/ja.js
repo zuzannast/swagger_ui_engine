@@ -52,5 +52,7 @@ window.SwaggerTranslator.learn({
     "Finished Loading Resource Information. Rendering Swagger UI":"リソース情報の読み込みが完了しました. Swagger UIを描画しています",
     "Unable to read api":"APIを読み込めません",
     "from path":"次のパスから",
-    "server returned":"サーバからの返答"
+    "server returned":"サーバからの返答",
+    "Authorize":"Authorize",
+    "Back to the list":"Back to the list",
 });
