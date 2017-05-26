@@ -19,6 +19,18 @@ consumes:
   - application/json
 produces:
   - application/json
+securityDefinitions:
+  petstore_auth:
+    type: oauth2
+    authorizationUrl: http://petstore.swagger.io/oauth/dialog
+    flow: implicit
+    scopes:
+      write:pets: modify pets in your account
+      read:pets: read your pets
+  api_key:
+    type: apiKey
+    name: api_key
+    in: header
 paths:
   /pets:
     get:
@@ -41,6 +53,8 @@ paths:
           description: unexpected error
           schema:
             $ref: '../common/Error.yaml'
+      security:
+        - oauth2: ["read:pets"]
     post:
       description: Creates a new pet in the store.  Duplicates are allowed
       operationId: addPet
@@ -60,6 +74,8 @@ paths:
           description: unexpected error
           schema:
             $ref: '../common/Error.yaml'
+      security:
+        - oauth2: ["read:pets"]
   /pets/{id}:
     get:
       description: Returns a user based on a single ID, if the user does not have access to the pet
@@ -80,6 +96,8 @@ paths:
           description: unexpected error
           schema:
             $ref: '../common/Error.yaml'
+      security:
+        - oauth2: ["read:pets"]
     delete:
       description: deletes a single pet based on the ID supplied
       operationId: deletePet
@@ -97,3 +115,5 @@ paths:
           description: unexpected error
           schema:
             $ref: '../common/Error.yaml'
+      security:
+        - oauth2: ["read:pets"]

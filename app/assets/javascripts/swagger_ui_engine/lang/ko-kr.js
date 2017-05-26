@@ -49,5 +49,7 @@ window.SwaggerTranslator.learn({
     "Finished Loading Resource Information. Rendering Swagger UI":"리소스 정보 불러오기 완료. Swagger UI 랜더링",
     "Unable to read api":"api를 읽을 수 없습니다.",
     "from path":"다음 경로로 부터",
-    "server returned":"서버 응답함."
+    "server returned":"서버 응답함.",
+    "Authorize":"Authorize",
+    "Back to the list":"Back to the list",
 });

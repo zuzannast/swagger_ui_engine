@@ -1,9 +1,13 @@
 module SwaggerUiEngine
   class DocsController < ApplicationController
-    include ConfigParser
-    include SwaggerUiDefaults
+    include SwaggerUiEngine::ConfigParser
+    include SwaggerUiEngine::OauthConfigParser
+    include SwaggerUiEngine::SwaggerUiDefaults
 
-    before_action :set_configs
+    before_action :set_configs, :set_oauth_configs
+
+    def oauth2
+    end
 
     def index
       # backward compatibility for defining single doc url in strings
@@ -12,6 +16,7 @@ module SwaggerUiEngine
     end
 
     def show
+      @single_doc_url = single_doc_url? || single_doc_url_hash?
       @swagger_url = @swagger_url[params[:id].to_sym] unless single_doc_url?
     end
 
@@ -24,6 +29,15 @@ module SwaggerUiEngine
       @request_headers = set_request_headers
       @swagger_url = set_swagger_url
       @validator_url = set_validator_url
+    end
+
+    def set_oauth_configs
+      @oauth_app_name = set_oauth_app_name
+      @oauth_client_id = set_oauth_client_id
+      @oauth_client_secret = set_oauth_client_secret
+      @oauth_realm = set_oauth_realm
+      @oauth_query_string_params = set_oauth_query_string_params
+      @oauth_scope_separator = set_oauth_scope_separator
     end
 
     def single_doc_url?
