@@ -2,6 +2,14 @@
 
 ## master
 
+## 1.0.1
+
+* Support OAuth2 authentication
+* Support loading Swagger UI translations
+* Add return link for multiple API versions
+* Add `de` translation
+* Refactor helpers
+
 ## 1.0.0
 
 * Rails 5 dependency. It is compatible with previous versions.
