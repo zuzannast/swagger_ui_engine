@@ -4,6 +4,7 @@ module SwaggerUiEngine
     include SwaggerUiEngine::OauthConfigParser
     include SwaggerUiEngine::SwaggerUiDefaults
 
+    add_template_helper SwaggerUiEngine::TranslationHelper
     before_action :set_configs, :set_oauth_configs
 
     def oauth2
