@@ -2,6 +2,10 @@
 
 ## master
 
+## 1.0.2
+
+* Fix translation loading error
+
 ## 1.0.1
 
 * Support OAuth2 authentication

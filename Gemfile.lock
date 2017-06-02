@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    swagger_ui_engine (1.0.1)
+    swagger_ui_engine (1.0.2)
       rails (~> 5.0, >= 5.0.0)
 
 GEM
