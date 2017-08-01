@@ -3,7 +3,7 @@ engines:
   brakeman:
     enabled: true
   bundler-audit:
-    enabled: true
+    enabled: false
   csslint:
     enabled: false
   duplication:
