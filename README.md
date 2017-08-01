@@ -82,6 +82,8 @@ and place your main documentation file under `/public/api` path.
 
 #### Single API documentation
 
+**NOTE**: This is a compatibility patch for the `SwaggerUiEngine` gem versions `<= 0.0.5`. It's recommended to version your API documentation from the beginning.
+
 You can define your main documentation url in a hash value (same way as in the versioned documentations) or pass single string with the url:
 
 ```
@@ -91,8 +93,7 @@ SwaggerUiEngine.configure do |config|
   config.swagger_url = 'api/v1/swagger.yaml'
 end
 ```
-
-This is a compatibility patch for the `SwaggerUiEngine` gem versions `<= 0.0.5`
+and place your main documentation file under `/public/api/v1` path. The `v1` filepath is required for single API documentation.
 
 ### Configure
 Config Name | Swagger parameter name | Description
