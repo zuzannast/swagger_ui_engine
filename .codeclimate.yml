@@ -19,7 +19,6 @@ engines:
     enabled: true
 ratings:
   paths:
-  - Gemfile.lock
   - "**.erb"
   - "**.haml"
   - "**.rb"
@@ -36,3 +35,4 @@ exclude_paths:
 - config/
 - test/
 - app/assets
+- Gemfile.lock
