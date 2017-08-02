@@ -5,6 +5,8 @@ module SwaggerUiEngine
     include SwaggerUiEngine::SwaggerUiDefaults
 
     add_template_helper SwaggerUiEngine::TranslationHelper
+    layout 'swagger_ui_engine/layouts/swagger', except: %w(oauth2)
+
     before_action :set_configs, :set_oauth_configs
 
     def oauth2
