@@ -12,7 +12,7 @@
 
     <%= javascript_include_tag "swagger_ui_engine/application" %>
     <%= csrf_meta_tags %>
-
+    <%= yield :head %>
   </head>
 
   <body class="swagger-section">
@@ -24,14 +24,7 @@
 
     <div id="message-bar" class="swagger-ui-wrap" data-sw-translate>&nbsp;</div>
     <div id="swagger-ui-container" class="swagger-ui-wrap">
-      <ul>
-        <h2> API documentations: </h2>
-        <% @swagger_url.each_key do |k| %>
-          <li>
-            <h1> <%= link_to k, doc_path(k) %> </h1>
-          </li>
-        <% end %>
-      </ul>
+      <%= yield %>
     </div>
   </body>
 </html>

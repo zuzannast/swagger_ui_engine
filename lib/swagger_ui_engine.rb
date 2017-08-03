@@ -1,6 +1,7 @@
 require 'swagger_ui_engine/engine'
 require 'swagger_ui_engine/version'
 require 'swagger_ui_engine/configuration'
+require 'swagger_ui_engine/defaults'
 
 module SwaggerUiEngine
   class << self

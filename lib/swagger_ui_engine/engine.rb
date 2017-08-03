@@ -1,3 +1,5 @@
+require 'sass/rails'
+
 module SwaggerUiEngine
   class Engine < ::Rails::Engine
     isolate_namespace SwaggerUiEngine

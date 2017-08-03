@@ -7,3 +7,5 @@ test/dummy/log/*.log
 swagger_ui_engine-*.gem
 
 test/dummy/log/test.log
+
+Gemfile.lock
