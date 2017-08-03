@@ -29,21 +29,15 @@ module SwaggerUiEngine
     private
 
     def set_configs
-      @doc_expansion = set_doc_expansion
-      @json_editor = set_json_editor
-      @model_rendering = set_model_rendering
-      @request_headers = set_request_headers
-      @swagger_url = set_swagger_url
-      @validator_url = set_validator_url
+      SwaggerUiEngine::DEFAULTS.keys.each do |key|
+        instance_variable_set("@#{key}", self.send("set_#{key}"))
+      end
     end
 
     def set_oauth_configs
-      @oauth_app_name = set_oauth_app_name
-      @oauth_client_id = set_oauth_client_id
-      @oauth_client_secret = set_oauth_client_secret
-      @oauth_realm = set_oauth_realm
-      @oauth_query_string_params = set_oauth_query_string_params
-      @oauth_scope_separator = set_oauth_scope_separator
+      SwaggerUiEngine::OAUTH2_DEFAULTS.keys.each do |key|
+        instance_variable_set("@#{key}", self.send("set_#{key}"))
+      end
     end
 
     def single_doc_url?
