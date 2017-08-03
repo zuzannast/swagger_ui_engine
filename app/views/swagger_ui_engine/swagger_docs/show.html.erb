@@ -19,7 +19,7 @@
         window.swaggerUi = new SwaggerUi({
           url: url,
           validatorUrl: "<%= @validator_url %>",
-          oauth2RedirectUrl: "<%= oauth2_docs_path %>",
+          oauth2RedirectUrl: "<%= oauth2_swagger_docs_path %>",
           dom_id: "swagger-ui-container",
           supportedSubmitMethods: ['get', 'post', 'put', 'delete', 'patch'],
           onComplete: function(swaggerApi, swaggerUi){
@@ -61,6 +61,6 @@
 
 <% unless @single_doc_url %>
   <div class="swagger-ui-wrap">
-    <a href="<%= docs_path %>" class="swagger-return-link" data-sw-translate>Back to the list</a>
+    <a href="<%= swagger_docs_path %>" class="swagger-return-link" data-sw-translate> Back to the list </a>
   </div>
 <% end %>

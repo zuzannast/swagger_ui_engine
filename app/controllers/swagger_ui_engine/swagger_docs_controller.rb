@@ -1,5 +1,5 @@
 module SwaggerUiEngine
-  class DocsController < ApplicationController
+  class SwaggerDocsController < ApplicationController
     include SwaggerUiEngine::ConfigParser
     include SwaggerUiEngine::OauthConfigParser
 
@@ -13,8 +13,8 @@ module SwaggerUiEngine
 
     def index
       # backward compatibility for defining single doc url in strings
-      redirect_to doc_path('v1') if single_doc_url?
-      redirect_to doc_path(@swagger_url.keys.first) if single_doc_url_hash?
+      redirect_to swagger_doc_path('v1') if single_doc_url?
+      redirect_to swagger_doc_path(@swagger_url.keys.first) if single_doc_url_hash?
     end
 
     def show
