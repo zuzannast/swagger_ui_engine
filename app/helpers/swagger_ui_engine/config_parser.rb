@@ -1,8 +1,8 @@
 module SwaggerUiEngine
   module ConfigParser
     SwaggerUiEngine::DEFAULTS.each do |default|
-      next if default.first.to_s == 'validator_url'
-      
+      next if default.first.to_s.eql?('validator_url')
+
       define_method("set_#{default.first}") do
         # set_swagger_url set_doc_expansion
         # set_json_editor set_model_rendering

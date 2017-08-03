@@ -47,7 +47,7 @@ module SwaggerUiEngine
     end
 
     def single_doc_url_hash?
-      @swagger_url.is_a?(Hash) && @swagger_url.size == 1
+      @swagger_url.is_a?(Hash) && @swagger_url.size.eql?(1)
     end
   end
 end
