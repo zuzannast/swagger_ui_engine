@@ -1,10 +1,9 @@
 module SwaggerUiEngine
   module ConfigParser
     SwaggerUiEngine::DEFAULTS.each do |default|
-      config_name = default.first.to_s
-      next if config_name == 'validator_url'
-
-      define_method("set_#{config_name}") do
+      next if default.first.to_s == 'validator_url'
+      
+      define_method("set_#{default.first}") do
         # set_swagger_url set_doc_expansion
         # set_json_editor set_model_rendering
         # set_request_headers

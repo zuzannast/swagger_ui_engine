@@ -1,31 +1,12 @@
 module SwaggerUiEngine
   module OauthConfigParser
-    def set_oauth_app_name
-      configuration.oauth_app_name || 'your-app-name'
-    end
-
-    def set_oauth_client_id
-      configuration.oauth_client_id || 'your-client-id'
-    end
-
-    def set_oauth_client_secret
-      configuration.oauth_client_secret || 'your-client-secret-if-required'
-    end
-
-    def set_oauth_realm
-      configuration.oauth_realm || 'your-realms'
-    end
-
-    def set_oauth_scope_separator
-      configuration.oauth_scope_separator || ' '
-    end
-
-    def set_oauth_query_string_params
-      configuration.oauth_query_string_params || {}
-    end
-
-    def configuration
-      SwaggerUiEngine.configuration
+    SwaggerUiEngine::OAUTH2_DEFAULTS.each do |default|
+      define_method("set_#{default.first}") do
+        # set_oauth_app_name set_oauth_client_id
+        # set_oauth_client_secret set_oauth_realm
+        # set_oauth_scope_separator set_oauth_query_string_params
+        configuration.send("#{default.first}") || default.last
+      end
     end
   end
 end
