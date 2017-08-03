@@ -15,7 +15,7 @@ Swagger UI version | Rails version
 * Easily configurable Swagger interface and OAuth2 authorization
 * Enables using Swagger interface translations
 * Works with API-only applications
-* Simple, clear and actively maintaned :ok_woman:
+* Simple, clear and actively maintained :ok_woman:
 
 ## Problem
 Working on a Rails API, I've wanted to document my endpoints in the clearest and easiest way possible. My goal was to have the documentation separated from the actual codebase and to have a web UI version of Swagger for testing and reading it. Using Rails 5 default API, I didn't need to include Grape, so I took a look into some other existing solutions. Most of them were no longer supported (e.g. [swagger_engine](https://github.com/batdevis/swagger_engine) and [swagger-ui_rails](https://github.com/d4be4st/swagger-ui_rails)) or required adding some extra code for the actual documentation (e.g. [swagger-docs](https://github.com/richhollis/swagger-docs)). Also, none of them supported Swagger web UI configuration, so I decided to write and maintain a gem on my own that would allow others to include Swagger web UI as Rails engine and support writing simple documentation in YAML files.
