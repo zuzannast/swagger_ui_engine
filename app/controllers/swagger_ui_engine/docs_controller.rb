@@ -2,7 +2,6 @@ module SwaggerUiEngine
   class DocsController < ApplicationController
     include SwaggerUiEngine::ConfigParser
     include SwaggerUiEngine::OauthConfigParser
-    include SwaggerUiEngine::SwaggerUiDefaults
 
     add_template_helper SwaggerUiEngine::TranslationHelper
     layout 'swagger_ui_engine/layouts/swagger', except: %w(oauth2)
