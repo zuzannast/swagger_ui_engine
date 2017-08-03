@@ -2,6 +2,15 @@
 
 ## master
 
+## 1.1.0
+
+* Correct Oauth template name
+* Add sass/rails dependency for API-only applications
+* Rename routes to be Swagger-specific
+* Separate route for single API docs version
+* Ignore Gemfile.lock file
+* Overall refactor
+
 ## 1.0.2
 
 * Fix translation loading error
