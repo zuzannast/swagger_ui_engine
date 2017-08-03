@@ -90,10 +90,9 @@ You can define your main documentation url in a hash value (same way as in the v
 # config/initializers/swagger_ui_engine.rb
 
 SwaggerUiEngine.configure do |config|
-  config.swagger_url = 'api/v1/swagger.yaml'
+  config.swagger_url = 'api/swagger.yaml'
 end
 ```
-and place your main documentation file under `/public/api/v1` path. The `v1` filepath is required for single API documentation.
 
 ### Configure
 Config Name | Swagger parameter name | Description

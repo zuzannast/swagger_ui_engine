@@ -6,6 +6,7 @@ SwaggerUiEngine::Engine.routes.draw do
       end
     end
 
+    get 'single_swagger_doc', to: 'swagger_docs#single_doc', format: false
     root to: 'swagger_docs#index'
   end
 end
