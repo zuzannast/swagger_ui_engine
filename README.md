@@ -28,6 +28,11 @@ Add to Gemfile
 gem 'swagger_ui_engine'
 ```
 
+And if your application is Rails-API only, add the following:
+```
+gem 'sass-rails'
+```
+
 And then run:
 
 ```
