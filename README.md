@@ -2,7 +2,7 @@
 
 Include [swagger-ui](https://github.com/swagger-api/swagger-ui) as Rails engine and document your API with simple YAML files. 
 
-[![Gem Version](https://badge.fury.io/rb/swagger_ui_engine.svg)](https://badge.fury.io/rb/swagger_ui_engine) [![Build Status](https://travis-ci.org/ZuzannaSt/swagger_ui_engine.svg?branch=master)](https://travis-ci.org/ZuzannaSt/swagger_ui_engine) [![Code Climate](https://codeclimate.com/github/ZuzannaSt/swagger_ui_engine/badges/gpa.svg)](https://codeclimate.com/github/ZuzannaSt/swagger_ui_engine)
+[![Gem Version](https://badge.fury.io/rb/swagger_ui_engine.svg)](https://badge.fury.io/rb/swagger_ui_engine) [![Build Status](https://travis-ci.org/zuzannast/swagger_ui_engine.svg?branch=master)](https://travis-ci.org/zuzannast/swagger_ui_engine) [![Code Climate](https://codeclimate.com/github/zuzannast/swagger_ui_engine/badges/gpa.svg)](https://codeclimate.com/github/zuzannast/swagger_ui_engine)
 
 ## Versions
 
@@ -129,7 +129,7 @@ You can use [Swagger editor](https://github.com/swagger-api/swagger-editor) to w
 
 ## Example app
 
-Here's an example use of [SwaggerUiEngine in Rails application](https://github.com/ZuzannaSt/swagger_ui_engine_example).
+Here's an example use of [SwaggerUiEngine in Rails application](https://github.com/zuzannast/swagger_ui_engine_example).
 
 ## License
 
