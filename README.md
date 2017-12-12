@@ -118,8 +118,8 @@ Config Name | Swagger parameter name | Description
 --- | --- | ---
 config.oauth_client_id | client_id | Default clientId. MUST be a string
 config.oauth_client_secret | client_secret | Default clientSecret. MUST be a string
-config.oauth_client_realm | realm | realm query parameter (for oauth1) added to `authorizationUrl` and `tokenUrl` . MUST be a string
-config.oauth_client_app_name | appName | application name, displayed in authorization popup. MUST be a string
+config.oauth_realm | realm | realm query parameter (for oauth1) added to `authorizationUrl` and `tokenUrl` . MUST be a string
+config.oauth_app_name | appName | application name, displayed in authorization popup. MUST be a string
 config.oauth_scope_separator | scopeSeparator | scope separator for passing scopes, encoded before calling, default value is a space (encoded value `%20`). MUST be a string
 config.oauth_query_string_params | additionalQueryStringParams | Additional query parameters added to `authorizationUrl` and `tokenUrl`. MUST be an object
 

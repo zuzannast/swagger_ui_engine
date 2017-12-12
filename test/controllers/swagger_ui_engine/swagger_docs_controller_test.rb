@@ -21,7 +21,7 @@ module SwaggerUiEngine
     test 'oauth2 redirect url should be set' do
       get '/swagger/swagger_docs/v1'
       assert_response :success
-      assert_match('oauth2RedirectUrl: "/swagger/swagger_docs/oauth2"', @response.body)
+      assert_match('oauth2RedirectUrl: "http://www.example.com/swagger/swagger_docs/oauth2"', @response.body)
     end
 
     test 'custom config options should work successfully' do
