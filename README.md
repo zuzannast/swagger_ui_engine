@@ -103,7 +103,7 @@ end
 ### Configure
 Config Name | Swagger parameter name | Description
 --- | --- | ---
-config.swagger_url | url | The url pointing `swagger.yaml` (Swagger 2.0) as per [OpenAPI Spec](https://github.com/OAI/OpenAPI-Specification/). This params requires hash value - pass your API doc version name as a key and it's main documentation url as a value.
+config.swagger_url | url | The url pointing `swagger.yaml` (Swagger 2.0) as per [OpenAPI Spec](https://github.com/OAI/OpenAPI-Specification/). Accepts a Hash, with API version names as keys and documentation URLs as values. Also accepts a String pointing to documentation for all versions.
 config.doc_expansion | docExpansion | Controls how the API listing is displayed. It can be set to 'none' (default), 'list' (shows operations for each resource), or 'full' (fully expanded: shows operations and their details).
 config.model_rendering | defaultModelRendering | Controls how models are shown when the API is first rendered. It can be set to 'model' or 'schema', and the default is 'schema'.
 config.request_headers | showRequestHeaders | Whether or not to show the headers that were sent when making a request via the 'Try it out!' option. Defaults to `false`.
