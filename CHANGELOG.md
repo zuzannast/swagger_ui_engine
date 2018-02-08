@@ -2,6 +2,12 @@
 
 ## master
 
+## 1.1.1
+
+* Dependency change from Rails 5 to 4.2
+* Improvements in OAuth2 implementation
+* Small README.md and config updates
+
 ## 1.1.0
 
 * Correct Oauth template name
