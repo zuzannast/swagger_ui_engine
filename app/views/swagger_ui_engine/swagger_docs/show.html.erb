@@ -19,7 +19,7 @@
         window.swaggerUi = new SwaggerUi({
           url: url,
           validatorUrl: "<%= @validator_url %>",
-          oauth2RedirectUrl: "<%= oauth2_swagger_docs_path %>",
+          oauth2RedirectUrl: "<%= oauth2_swagger_docs_url %>",
           dom_id: "swagger-ui-container",
           supportedSubmitMethods: ['get', 'post', 'put', 'delete', 'patch'],
           onComplete: function(swaggerApi, swaggerUi){
