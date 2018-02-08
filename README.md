@@ -1,6 +1,6 @@
 # SwaggerUiEngine
 
-Include [swagger-ui](https://github.com/swagger-api/swagger-ui) as Rails engine and document your API with simple YAML files. 
+Include [swagger-ui](https://github.com/swagger-api/swagger-ui) as Rails engine and document your API with simple YAML files.
 
 [![Gem Version](https://badge.fury.io/rb/swagger_ui_engine.svg)](https://badge.fury.io/rb/swagger_ui_engine) [![Build Status](https://travis-ci.org/zuzannast/swagger_ui_engine.svg?branch=master)](https://travis-ci.org/zuzannast/swagger_ui_engine) [![Code Climate](https://codeclimate.com/github/zuzannast/swagger_ui_engine/badges/gpa.svg)](https://codeclimate.com/github/zuzannast/swagger_ui_engine)
 
@@ -8,7 +8,7 @@ Include [swagger-ui](https://github.com/swagger-api/swagger-ui) as Rails engine 
 
 Swagger UI version | Rails version
 ------------------ | ----------------
-2.2.10             | >= 5.0.0
+2.2.10             | >= 4.2
 
 ## Features
 * Supports API documentation versioning / multiple APIs documentation
