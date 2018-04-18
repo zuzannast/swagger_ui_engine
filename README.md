@@ -131,6 +131,10 @@ You can use [Swagger editor](https://github.com/swagger-api/swagger-editor) to w
 
 Here's an example use of [SwaggerUiEngine in Rails application](https://github.com/zuzannast/swagger_ui_engine_example).
 
+## Contributing
+
+You're very much welcome to contribute to this repository. Start by creating a Github issue and describing your change thoroughly. If you decide to publish a pull request, please make sure it points to the latest versioned branch instead of master. 
+
 ## License
 
 This project is available under MIT-LICENSE. :sunny:
