@@ -1,4 +1,4 @@
 module SwaggerUiEngine
-  VERSION = '1.1.1'.freeze
+  VERSION = '1.1.2'.freeze
   SWAGGER_UI_VERSION = '2.2.10'.freeze
 end
