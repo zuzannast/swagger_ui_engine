@@ -2,6 +2,10 @@
 
 ## master
 
+## 1.1.2
+
+* Fix incorrect Rails lock version
+
 ## 1.1.1
 
 * Dependency change from Rails 5 to 4.2
