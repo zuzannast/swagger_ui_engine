@@ -16,10 +16,11 @@ module SwaggerUiEngine
         swagger_ui_engine/favicon-32x32.png
         swagger_ui_engine/favicon-16x16.png
         swagger_ui_engine/lang/*.js
+        swagger_ui_engine/DroidSans-Bold.ttf
+        swagger_ui_engine/DroidSans.ttf
       )
 
       Rails.application.config.assets.paths << Rails.root.join('vendor', 'assets', 'fonts')
-      Rails.application.config.assets.precompile << /\.(?:svg|eot|woff|ttf)$/
     end
   end
 end
