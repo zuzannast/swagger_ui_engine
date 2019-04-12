@@ -23,5 +23,5 @@ Gem::Specification.new do |s|
   ]
 
   s.add_runtime_dependency 'rails', '>= 4.2'
-  s.add_runtime_dependency 'sass-rails'
+  s.add_runtime_dependency 'sassc-rails'
 end
