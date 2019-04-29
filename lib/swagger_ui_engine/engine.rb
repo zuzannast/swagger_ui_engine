@@ -1,4 +1,4 @@
-require 'sass/rails'
+require 'sassc/rails'
 
 module SwaggerUiEngine
   class Engine < ::Rails::Engine
