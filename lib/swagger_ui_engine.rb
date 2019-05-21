@@ -1,3 +1,5 @@
+require 'rails/engine'
+require 'action_controller/railtie'
 require 'swagger_ui_engine/engine'
 require 'swagger_ui_engine/version'
 require 'swagger_ui_engine/configuration'

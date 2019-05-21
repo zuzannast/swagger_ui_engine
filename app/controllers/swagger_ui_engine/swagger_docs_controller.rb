@@ -1,5 +1,5 @@
 module SwaggerUiEngine
-  class SwaggerDocsController < ApplicationController
+  class SwaggerDocsController < SwaggerUiEngine::ApplicationController
     include SwaggerUiEngine::ConfigParser
     include SwaggerUiEngine::OauthConfigParser
 
