@@ -2,6 +2,11 @@
 
 ## master
 
+## 1.1.3
+* Turns compatible with sprockets 4
+* Application Controller inheritance
+* Switch to sassc-rails gem
+
 ## 1.1.2
 
 * Fix incorrect Rails lock version
