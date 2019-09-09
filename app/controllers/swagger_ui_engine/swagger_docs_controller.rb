@@ -8,8 +8,7 @@ module SwaggerUiEngine
 
     before_action :set_configs, :set_oauth_configs
 
-    def oauth2
-    end
+    def oauth2; end
 
     def index
       # backward compatibility for defining single doc url in strings

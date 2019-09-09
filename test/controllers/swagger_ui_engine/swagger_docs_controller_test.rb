@@ -39,11 +39,15 @@ module SwaggerUiEngine
       assert_response :success
       assert_match('showRequestHeaders: "false"', @response.body)
       assert_match('jsonEditor: "false"', @response.body)
-      assert_match('validatorUrl: "null"', @response.body)
       assert_match('clientId: "your-client-id"', @response.body)
       assert_match('clientSecret: "your-client-secret-if-required"', @response.body)
       assert_match('scopeSeparator: " "', @response.body)
       assert_match('additionalQueryStringParams: "{}"', @response.body)
+    end
+
+    test 'validatorUrl should should check the url to validate the given url or return real null' do
+      get '/swagger/swagger_docs/v1'
+      assert_match('validatorUrl: validationUrl("null")', @response.body)
     end
   end
 end

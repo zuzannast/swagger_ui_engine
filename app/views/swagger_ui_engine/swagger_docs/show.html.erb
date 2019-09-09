@@ -1,5 +1,9 @@
 <% content_for(:head) do %>
     <script type="text/javascript">
+      function validationUrl(url) {
+        return url === 'null' ? null : url;
+      }
+
       $(function () {
         var url = window.location.search.match(/url=([^&]+)/);
         if (url && url.length > 1) {
@@ -18,7 +22,7 @@
         }
         window.swaggerUi = new SwaggerUi({
           url: url,
-          validatorUrl: "<%= @validator_url %>",
+          validatorUrl: validationUrl("<%= @validator_url %>"),
           oauth2RedirectUrl: "<%= oauth2_swagger_docs_url %>",
           dom_id: "swagger-ui-container",
           supportedSubmitMethods: ['get', 'post', 'put', 'delete', 'patch'],
