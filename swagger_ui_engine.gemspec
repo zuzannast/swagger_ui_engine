@@ -22,7 +22,7 @@ Gem::Specification.new do |s|
     'CHANGELOG.md'
   ]
 
-  s.add_runtime_dependency 'rails', '>= 4.2', '< 6.1'
+  s.add_runtime_dependency 'rails', '>= 4.2', '< 6.2'
   s.add_runtime_dependency 'sassc-rails'
 
   s.add_development_dependency 'sqlite3'
