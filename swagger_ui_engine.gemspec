@@ -24,4 +24,6 @@ Gem::Specification.new do |s|
 
   s.add_runtime_dependency 'rails', '>= 4.2', '< 6.1'
   s.add_runtime_dependency 'sassc-rails'
+
+  s.add_development_dependency 'sqlite3'
 end
