@@ -2,6 +2,9 @@
 
 ## master
 
+## 1.1.4
+* Support to Rails 6.1
+
 ## 1.1.3
 * Turns compatible with sprockets 4
 * Application Controller inheritance
