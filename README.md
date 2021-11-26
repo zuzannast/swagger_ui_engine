@@ -8,7 +8,7 @@ Include [swagger-ui](https://github.com/swagger-api/swagger-ui) as Rails engine 
 
 Swagger UI version | Rails version
 ------------------ | ----------------
-2.2.10             | >= 4.2, <6
+2.2.10             | >= 6
 
 ## Features
 * Supports API documentation versioning / multiple APIs documentation
