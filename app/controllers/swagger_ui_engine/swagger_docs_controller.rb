@@ -3,13 +3,12 @@ module SwaggerUiEngine
     include SwaggerUiEngine::ConfigParser
     include SwaggerUiEngine::OauthConfigParser
 
-    add_template_helper SwaggerUiEngine::TranslationHelper
+    helper SwaggerUiEngine::TranslationHelper
     layout 'swagger_ui_engine/layouts/swagger', except: %w(oauth2)
 
     before_action :set_configs, :set_oauth_configs
 
-    def oauth2
-    end
+    def oauth2; end
 
     def index
       # backward compatibility for defining single doc url in strings
