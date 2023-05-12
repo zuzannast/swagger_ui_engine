@@ -18,6 +18,8 @@ module SwaggerUiEngine
         swagger_ui_engine/lang/*.js
         swagger_ui_engine/DroidSans-Bold.ttf
         swagger_ui_engine/DroidSans.ttf
+        swagger_ui_engine/application.js
+        swagger_ui_engine/application.css
       ]
 
       Rails.application.config.assets.paths << Rails.root.join('vendor', 'assets', 'fonts')

@@ -1,6 +1,8 @@
 # SwaggerUiEngine Changelog
 
 ## master
+## 1.1.4
+* Support Rails 7
 
 ## 1.1.3
 * Turns compatible with sprockets 4
