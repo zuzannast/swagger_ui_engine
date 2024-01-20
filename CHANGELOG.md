@@ -1,6 +1,10 @@
 # SwaggerUiEngine Changelog
 
 ## master
+
+## 1.1.5
+* Support Rails 7.1
+
 ## 1.1.4
 * Support Rails 7
 
